@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #b2f2bb;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #f9f9f9;
+  padding: 20px 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px #ffffff,
+              5px 5px 12px rgba(0,0,0,.16);
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+  position: relative;
+  height: 550px; 
+}
+
+.tab-bar {
+  grid-column: span 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.tab-bar div {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab-bar .active {
+  color: #4B6F44;
+  border-color: #b2f2bb;
+}
+
+
+
+.tab-content {
+  grid-column: span 4;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.more-grid {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.item {
+  background-color: #ecf3f3;
+  box-shadow: -5px -5px 12px #ffffff,
+              5px 5px 12px rgba(0,0,0,.16);
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.item .icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.item .label {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.2;
+}
+
+.item.empty {
+  background: none;
+  box-shadow: none;
+  pointer-events: none;
+}

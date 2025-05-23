@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>More</title>
+  <link rel="stylesheet" href="unit.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="tab-bar">
+  <div onclick="location.href='cal.html'">Calculator</div>
+  <div onclick="location.href='exchange.html'">Exchange Rate</div>
+  <div class="active" onclick="location.href='unit.html'">More</div>
+</div>
+
+
+      <div class="tab-content">
+        Select a conversion type
+      </div>
+
+      <div class="more-grid">
+        <a class="item" href="length.html">
+          <div class="icon">📏</div>
+          <div class="label">Length<br/>Conversion</div>
+        </a>
+        <a class="item" href="area.html">
+          <div class="icon">📐</div>
+          <div class="label">Area<br/>Conversion</div>
+        </a>
+        <a class="item" href="speed.html">
+          <div class="icon">🏎️</div>
+          <div class="label">Speed<br/>Conversion</div>
+        </a>
+        <a class="item" href="weight.html">
+          <div class="icon">⚖️</div>
+          <div class="label">Weight<br/>Conversion</div>
+        </a>
+
+        <div class="item empty"></div>
+        <div class="item empty"></div>
+      </div>
+
+    </div>
+  </div>
+    <script src="unit.js"></script>
+</body>
+</html>

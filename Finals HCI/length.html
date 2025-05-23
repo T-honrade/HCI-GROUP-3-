@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Length Converter</title>
+  <link rel="stylesheet" href="length.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      
+      <div class="tab-bar" style="justify-content: flex-start;">
+        <div style="font-size: 16px; font-weight: bold; cursor: pointer;" onclick="goBack()">← Length Conversion</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="currency-controls">
+          <select id="fromUnit">
+            <option value="m">Meter (m)</option>
+            <option value="km">Kilometer (km)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="mm">Millimeter (mm)</option>
+            <option value="mi">Mile (mi)</option>
+            <option value="yd">Yard (yd)</option>
+            <option value="ft">Foot (ft)</option>
+            <option value="in">Inch (in)</option>
+          </select>
+          <button id="swapButton" title="Swap units">⇄</button>
+          <select id="toUnit">
+            <option value="km">Kilometer (km)</option>
+            <option value="m">Meter (m)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="mm">Millimeter (mm)</option>
+            <option value="mi">Mile (mi)</option>
+            <option value="yd">Yard (yd)</option>
+            <option value="ft">Foot (ft)</option>
+            <option value="in">Inch (in)</option>
+          </select>
+        </div>
+
+        <div>
+          <span id="fromAmount">100</span> →
+          <span id="toAmount">0</span>
+        </div>
+
+      <input type="text" id="display" value="100" readonly>
+
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button disabled></button>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button disabled></button>
+      <button onclick="press('00')">00</button>
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="backspace()">⌫</button>
+    </div>
+  </div>
+
+  <script src="length.js"></script>
+</body>
+</html>

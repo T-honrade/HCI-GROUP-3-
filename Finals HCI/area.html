@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Area Converter</title>
+  <link rel="stylesheet" href="area.css"> 
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="tab-bar" style="justify-content: flex-start;">
+        <div style="font-size: 16px; font-weight: bold; cursor: pointer;" onclick="goBack()">← Area Conversion</div>
+      </div>
+
+      <div class="tab-content">
+        <div class="currency-controls">
+          <select id="fromUnit">
+            <option value="m2">Square Meter (m²)</option>
+            <option value="km2">Square Kilometer (km²)</option>
+            <option value="cm2">Square Centimeter (cm²)</option>
+            <option value="mm2">Square Millimeter (mm²)</option>
+            <option value="mi2">Square Mile (mi²)</option>
+            <option value="yd2">Square Yard (yd²)</option>
+            <option value="ft2">Square Foot (ft²)</option>
+            <option value="in2">Square Inch (in²)</option>
+          </select>
+          <button id="swapButton" title="Swap units">⇄</button>
+          <select id="toUnit">
+            <option value="km2">Square Kilometer (km²)</option>
+            <option value="m2">Square Meter (m²)</option>
+            <option value="cm2">Square Centimeter (cm²)</option>
+            <option value="mm2">Square Millimeter (mm²)</option>
+            <option value="mi2">Square Mile (mi²)</option>
+            <option value="yd2">Square Yard (yd²)</option>
+            <option value="ft2">Square Foot (ft²)</option>
+            <option value="in2">Square Inch (in²)</option>
+          </select>
+        </div>
+
+        <div>
+          <span id="fromAmount">100</span> →
+          <span id="toAmount">0</span>
+        </div>
+
+
+      <input type="text" id="display" value="100" readonly>
+
+      <button onclick="press('7')">7</button>
+      <button onclick="press('8')">8</button>
+      <button onclick="press('9')">9</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="press('4')">4</button>
+      <button onclick="press('5')">5</button>
+      <button onclick="press('6')">6</button>
+      <button disabled></button>
+      <button onclick="press('1')">1</button>
+      <button onclick="press('2')">2</button>
+      <button onclick="press('3')">3</button>
+      <button disabled></button>
+      <button onclick="press('00')">00</button>
+      <button onclick="press('0')">0</button>
+      <button onclick="press('.')">.</button>
+      <button onclick="backspace()">⌫</button>
+    </div>
+  </div>
+
+  <script src="area.js"></script>
+</body>
+</html>
